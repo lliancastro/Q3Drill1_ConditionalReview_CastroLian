@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Average Finder</title>
+    <!-- PyScript CSS and JS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f4f4f9;
+            border-radius: 8px;
+            box-shadow: 0 0 8px #ccc;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        #info {
+            margin-top: 20px;
+            font-size: 18px;
+            white-space: pre-line; /* preserve line breaks */
+            background: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="POST">
+        <label for="score1">Quiz Score 1 (0–100):</label>
+        <input type="number" name="score1" required min="0" max="100">
+
+        <label for="score2">Quiz Score 2 (0–100):</label>
+        <input type="number" name="score2" required min="0" max="100">
+
+        <button type="submit">Compute</button>
+        
+  <label for="Email">Enter email:</label><br>
+  <input type="text" id="Email" name="Email"><br>
+  <label for="Password">Enter password:</label>
+  <input type="text" id="Password" name="Password">
+
+  <label for="Result">result:</label>
+  <input type="text" id="Result" name="Result">
+
+</form>
+
+    </form>
+
+    <div id="result">
+        {{ result }}
+    </div>
+
+</body>
+</html>
